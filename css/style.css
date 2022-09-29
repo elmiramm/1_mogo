@@ -40,13 +40,13 @@ justify-content: center;
 	width: 100%;
 	max-width: 880px;
 	margin: 0 auto;
+	text-align: center;
 }
 .intro__suptitle{
 	margin-bottom: 20px;
 	font-family: 'Kaushan Script', cursive;;
 	font-size: 72px;
 	color: #fff;
-	text-align: center;
 }
 
 .intro__title{
@@ -54,7 +54,6 @@ justify-content: center;
 	font-size: 150px;
 	font-weight: bold;
 	text-transform: uppercase;
-	text-align: center;
 	line-height: 1;
 }
 
@@ -63,7 +62,7 @@ justify-content: center;
 	display: block;
 	width: 60px;
 	height: 3px;
-	margin: 60px auto 0;
+	margin: 60px auto;
 
 	background-color: #fff;
 }
@@ -130,4 +129,26 @@ justify-content: center;
 .nav__link:hover:after {
 	opacity: 1;
 	display: block;
+}
+
+/*Buttons*/
+.btn {
+	display: inline-block;
+	vertical-align: top;
+	padding: 8px 30px;
+	
+	border: 3px solid #fff;
+
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	transition: color 0.2s linear, color 0.2s linear;
+}
+
+.btn:hover {
+	background-color: #fff;
+	color: #333;
 }
