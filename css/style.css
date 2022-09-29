@@ -126,9 +126,14 @@ justify-content: center;
 	color: #fce38a;
 }
 
-.nav__link:hover:after {
+.nav__link:hover:after,
+.nav__link.active:after {
 	opacity: 1;
 	display: block;
+}
+
+.nav__link.active {
+	color: #fce38a;
 }
 
 /*Buttons*/
@@ -155,11 +160,16 @@ justify-content: center;
 
 /*Slider*/
 .slider {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+}
+.slider__inner{
 	display: flex;
 	justify-content: space-between;
-	margin-top: 30px;
 }
-
 .slider__item{
 	width: 23%;
 	padding: 20px 0;
