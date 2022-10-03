@@ -253,3 +253,11 @@ justify-content: center;
 }
 
 /*About*/
+.about{
+	display: flex;
+	justify-content: space-between;
+}
+
+.about__item{
+	width: 30%;
+}
