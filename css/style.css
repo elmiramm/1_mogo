@@ -207,3 +207,49 @@ justify-content: center;
 	font-size: 24px;
 	font-weight: bold;
 }
+
+/*Sections*/
+
+.section {
+	padding: 80px 0;
+}
+
+.section__header{
+	width: 100%;
+	min-width: 950px;
+	margin: 0 auto 40px;
+
+	text-align: center;
+}
+
+.section__suptitle{
+	font-family: 'Kaushan Script', cursive;
+	font-size: 24px;
+	font-weight: 400;
+	color: #333;
+}
+
+.section__title {
+	font-size: 30px;
+	font-weight: bold;
+	color: #333;
+	text-transform: uppercase;
+}
+
+.section__title:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	margin: 30px auto;
+
+	background-color: #f38181;
+}
+
+.section__text {
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	color: #999;
+}
+
+/*About*/
