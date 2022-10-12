@@ -417,3 +417,53 @@ justify-content: center;
 	z-index: 1;
 }
 
+/* What We Do */
+
+.wedo {
+	display: flex;
+}
+
+.wedo__item{
+	width: 50%;
+}
+/* Accordion */
+.accordion__item {
+	border: 1px solid #e5e5e5;
+}
+
+.accordion__header {
+	padding: 15px 20px 15px 65px;
+	position: relative;
+
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion__icon {
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	z-index: 1;
+
+	transform: translateY(-50%);
+}
+
+.accordion__icon img {
+	display: block;
+}
+
+.accordion__content {
+	padding: 15px 20px;
+
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	color: #999;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.accordion__title {
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	text-transform: uppercase;
+}
