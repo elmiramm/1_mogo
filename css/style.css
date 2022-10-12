@@ -263,6 +263,14 @@ justify-content: center;
 	color: #999;
 }
 
+.section--devices {
+	padding-bottom: 0;
+	background: 
+	url("../images/unique_design/bg.jpg")
+	center no-repeat;
+	background-size: cover;
+}
+
 /*About*/
 .about{
 	margin-top: 80px;
@@ -387,3 +395,25 @@ justify-content: center;
 	font-size: 15px;
 	color: #999;
 }
+
+
+/* Devices */
+.devices {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+
+	position: relative;
+}
+
+.devices__item {
+	display: block;
+}
+
+.devices__item--iphone {
+	position: absolute;
+	bottom: -90px;
+	right: 0;
+	z-index: 1;
+}
+
