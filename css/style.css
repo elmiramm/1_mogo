@@ -271,6 +271,10 @@ justify-content: center;
 	background-size: cover;
 }
 
+.section--gray {
+	background-color: #f8f8f8;
+}
+
 /*About*/
 .about{
 	margin-top: 80px;
@@ -506,3 +510,48 @@ display: none;
 	text-transform: uppercase;
 }
 
+/* Reviews */
+.review {
+	padding: 0 110px;
+}
+
+.review__item {
+	padding-left: 210px;
+
+	position: relative;
+}
+
+.review__photo {
+	border: 2px solid #95e1d3;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.review__text {
+	font-size: 24px;
+	font-style: italic;
+	font-weight: 300;
+	color: #999;
+}
+
+.review__author {
+	margin-bottom: 15px;
+
+	font-family: 'Kaushan Script', cursive;
+	font-size: 24px;
+	color: #333;
+}
+
+.review__author:before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 60px;
+	height: 3px;
+	margin-right: 10px;
+
+	background-color: #f38181;
+
+}
