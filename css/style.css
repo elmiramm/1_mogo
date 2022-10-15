@@ -282,21 +282,21 @@ justify-content: center;
 	justify-content: space-between;
 }
 
-.card__item{
+.card__inner{
 	width: 380px;
 	background-color: #95e1d3;
 
 	position: relative;
 }
-.card__item:hover .card__text{
+.card__inner:hover .card__text{
 	opacity: 1;
 }
 
-.card__item:hover .card__img {
+.card__inner:hover .card__img {
 	transform: translate3d(-10px, -10px, 0);
 }
 
-.card__item:hover .card__img img {
+.card__inner:hover .card__img img {
 	opacity: 0.1;
 }
 
@@ -326,6 +326,29 @@ justify-content: center;
 	transform: translate3d(0, -50%, 0);
 
 	transition: opacity 0.2s linear;
+}
+
+.card__info {
+	margin-top: 20px;
+
+	text-align: center;
+}
+
+.card__name {
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+
+	text-transform: uppercase;
+}
+
+.card__prof {
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	font-style: italic;
+	color: #999;
+
 }
 
 /*Statistics*/
