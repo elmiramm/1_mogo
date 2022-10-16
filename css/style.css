@@ -562,6 +562,8 @@ display: none;
 }
 
 .review__text {
+	margin-bottom: 15px;
+	
 	font-size: 24px;
 	font-style: italic;
 	font-weight: 300;
@@ -569,7 +571,6 @@ display: none;
 }
 
 .review__author {
-	margin-bottom: 15px;
 
 	font-family: 'Kaushan Script', cursive;
 	font-size: 24px;
