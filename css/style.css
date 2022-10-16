@@ -232,6 +232,13 @@ justify-content: center;
 	text-align: center;
 }
 
+.section--bg {
+	background: url("../images/clients_bg.jpg") center no-repeat;
+	background-size: cover;
+
+	background-color: #d9d9d9;
+}
+
 .section__suptitle{
 	font-family: 'Kaushan Script', cursive;
 	font-size: 24px;
@@ -712,9 +719,10 @@ display: none;
 	}
 
 	.works__title {
-	margin-bottom: 5px;
+		margin-bottom: 5px;
 
 		font-size: 14px;
+		font-weight: bold;
 		text-transform: uppercase;
 	}
 
@@ -722,4 +730,64 @@ display: none;
 		font-size: 15px;
 		font-weight: 300;
 		font-style: italic;
+	}
+
+	/* Clients */
+
+	.clients {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 70px;
+	}
+
+	.clients__item {
+		width: 50%;
+		padding: 0 45px 0 175px;
+		position: relative;
+		margin-bottom: 60px;
+	}
+
+	.clients__photo {
+		width: 110px;
+		height: 110px;
+
+		border-radius: 50%;
+
+		position: absolute;
+		top: 0;
+		left: 40px;
+		z-index: 1;
+	}
+
+	.clients__name {
+		margin-bottom: 5px;
+
+		font-size: 14px;
+		font-weight: bold;
+		color: #333;
+		text-transform: uppercase;
+	}
+
+	.clients__prof {
+		font-family: 'Roboto', sans-serif;
+		font-size: 15px;
+		font-weight: 300;
+		font-style: italic;
+		color: #333;
+	}
+
+	.clients__text {
+		font-family: 'Roboto', sans-serif;
+		font-size: 15px;
+		color: #999;
+	}
+
+	.clients__text:before {
+		content: "";
+		display: block;
+		width: 60px;
+		height: 3px;
+		margin: 15px 0;
+
+		background-color: #f38181;
 	}
