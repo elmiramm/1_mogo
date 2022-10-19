@@ -1180,6 +1180,9 @@ display: none;
 		display: none;
 	}
 
+	.slider__item.active:before {
+		width: 50%;
+	}
 }
 
 @media (max-width: 575px) {
