@@ -721,6 +721,7 @@ display: none;
 
 .works {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .works__col {
@@ -1325,7 +1326,12 @@ display: none;
 	.review__author {
 		font-size: 20px;
 	}
-	
+
+	/* Works */
+	.works__col {
+		flex: none;
+		width: 50%;
+	}
 }
 
 @media (max-width: 575px) {
@@ -1401,5 +1407,10 @@ display: none;
 
 	.logos__img {
 		margin: 0 auto;
+	}
+
+	/* Works */
+	.works__col {
+		width: 100%;
 	}
 } 
