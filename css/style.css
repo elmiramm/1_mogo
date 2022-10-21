@@ -415,14 +415,19 @@ justify-content: center;
 
 .services {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .services__item {
-	flex: 1 1 0;
-	padding-left: 85px;
-	padding-right: 35px;
+	width: 33.333333%;
+	padding: 0 35px 40px 85px;
+	margin-bottom: 40px;
 
 	position: relative;
+}
+
+.services__item--border {
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .services__icon {
@@ -459,6 +464,8 @@ justify-content: center;
 
 .devices__item {
 	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 .devices__item--iphone {
@@ -472,11 +479,22 @@ justify-content: center;
 
 .wedo {
 	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
 }
 
 .wedo__item{
 	width: 50%;
+	padding: 0 15px;
 }
+
+.wedo__img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+
 /* Accordion */
 .accordion__item {
 	margin-bottom: 10px;
@@ -1192,6 +1210,16 @@ display: none;
 		border-right: 0;
 	}
 
+	/* Services */ 
+	.services__item {
+		width: 50%;
+		padding-bottom: 0;
+	}
+
+	.services__item--border {
+		border: 0;
+	}
+
 }
 
 @media (max-width: 770px) {
@@ -1202,8 +1230,12 @@ display: none;
 	
 	/* Section */
 	.section {
-		padding: 40px;
+		padding: 40px 0;
 	}
+
+.section--devices {
+	padding-bottom: 0;
+}
 
 	/* Card */
 
@@ -1229,8 +1261,30 @@ display: none;
 	.slider__item.active:before {
 		width: 50%;
 	}
+	/* Services */ 
+	.services {
+		justify-content: center;
+	}
 
-	
+	.services__item {
+		width: 100%;
+		max-width: 400px;
+		padding-left: 55px;
+		padding-right: 0;
+	}
+	.services__icon {
+		left: 0;
+	}
+
+	/* Wedo */
+
+	.wedo__img {
+		display: none;
+	}
+
+	.wedo__item {
+		width: 100%;
+	}
 }
 
 @media (max-width: 575px) {
@@ -1273,6 +1327,15 @@ display: none;
 
 	.stat__count {
 		font-size: 52px;
+	}
+	/* Devices */
+	.devices {
+		max-width: 300px;
+	}
+	.devices__item--iphone {
+		width: 180px;
+		bottom: -50px;
+		right: -80px;
 	}
 
 } 
