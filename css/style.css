@@ -181,6 +181,10 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 1;
 }
 
+.nav-toggle:focus {
+	outline: 0;
+}
+
 .nav-toggle__item {
 	display: block;
 	width: 100%;
@@ -1398,6 +1402,10 @@ display: none;
 		left: 0;
 
 		background-color: #f38181;
+	}
+
+	.nav.active {
+		display: block;
 	}
 
 	.nav__link {
