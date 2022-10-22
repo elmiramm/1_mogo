@@ -97,6 +97,20 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 }
 
+.header--fixed {
+	padding: 10px 0;
+
+	background-color: #f38181;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+
+	transform: translate3d(0, 0, 0);
+}
+
 /*Nav*/
 .nav {
 	font-size: 14px;
@@ -145,12 +159,21 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Nav-toggle */
 .nav-toggle {
+	display: none;
+
 	width: 30px;
 	padding: 10px 0;
 
+	font-size: 0;
+	color: transparent;
+
+	border: 0;
+	background: none;
+	cursor: pointer;
+
 	position: absolute;
-	top: 30px;
-	right: 30px;
+	top: 24px;
+	right: 24px;
 	z-index: 1;
 }
 
@@ -1338,10 +1361,18 @@ display: none;
 	.intro {
 		min-height: 650px;
 	}
+	/* Header */ 
+	.header {
+		padding-top: 10px;
+	}
 
 	/* Nav */
 	.nav {
 		display: none;
+	}
+
+	.nav-toggle {
+		display: block;
 	}
 	
 	/* Section */
