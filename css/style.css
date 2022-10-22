@@ -17,16 +17,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
-/* hr {
-	display: block;
-	width: 100%;
-	height: 1px;
-
-	border: 0;
-	background-color: #e5e5e5;
-	margin: 45px 0;
-} */
-
 /* Page */
 .page {
 	overflow: hidden;
@@ -42,12 +32,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Intro*/
 .intro {
-display: flex;
-flex-direction: column;
-justify-content: center;
-
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 820px;
 	width: 100%;
 	height: 100vh;
+	position: relative;
 
 	background: url("../images/intro.jpg") center no-repeat;
 	background-size: cover;
@@ -151,6 +142,55 @@ justify-content: center;
 .nav__link.active {
 	color: #fce38a;
 }
+
+/* Nav-toggle */
+.nav-toggle {
+	width: 30px;
+	padding: 10px 0;
+
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	z-index: 1;
+}
+
+.nav-toggle__item {
+	display: block;
+	width: 100%;
+	height: 3px;
+
+	background-color: #fff;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+.nav-toggle__item:before, 
+.nav-toggle__item:after
+{
+	content: "";
+	width: 100%;
+	height: 3px;
+
+	background-color: #fff;
+
+	position: absolute;
+	left: 0;
+	z-index: 1;
+}
+
+.nav-toggle__item:before {
+	top: -8px;
+}
+
+.nav-toggle__item:after {
+	bottom: -8px;
+}
+
 
 /*Buttons*/
 .btn {
@@ -1292,6 +1332,13 @@ display: none;
 }
 
 @media (max-width: 770px) {
+
+	/* Intro  */
+
+	.intro {
+		min-height: 650px;
+	}
+
 	/* Nav */
 	.nav {
 		display: none;
@@ -1404,7 +1451,7 @@ display: none;
 
 @media (max-width: 575px) {
 	/* Intro */
-
+	
 	.intro__suptitle {
 		font-size: 22px;
 	}
