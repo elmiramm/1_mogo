@@ -11,6 +11,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;1,300&display=swap"
 		rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<title>Mogo</title>
 	<script src="https://kit.fontawesome.com/defed792e9.js" crossorigin="anonymous"></script>
 </head>
@@ -316,17 +317,36 @@
 			<div class="container">
 				<div class="review">
 
-					<a href="#" class="review__btn review__btn--prev">Prev</a>
-					<a href="#" class="review__btn review__btn--next">Next</a>
-
-					<div class="review__item">
-						<img class="review__photo" src="images/icons/reviews.png" alt="Author's photo">
-						<div class="review__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-							tempor
-							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+					<div data-slider>
+						<div>
+							<div class="review__item">
+								<img class="review__photo" src="images/icons/reviews.png" alt="Author's photo">
+								<div class="review__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+									eiusmod
+									tempor
+									incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+									exercitation.”
+								</div>
+								<div class="review__author">Jon Doe</div>
+							</div>
 						</div>
-						<div class="review__author">Jon Doe</div>
+
+						<div>
+							<div class="review__item">
+								<img class="review__photo" src="images/icons/reviews.png" alt="Author's photo">
+								<div class="review__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+									eiusmod
+									tempor
+									incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+									exercitation.”
+								</div>
+								<div class="review__author">Jon Doe</div>
+							</div>
+						</div>
+
+
 					</div>
+
 				</div>
 			</div>
 		</div>
@@ -554,17 +574,39 @@
 			<div class="container">
 				<div class="review">
 
-					<a href="#" class="review__btn review__btn--prev">Prev</a>
-					<a href="#" class="review__btn review__btn--next">Next</a>
 
-					<div class="review__item review__item--padding-left">
-						<img class="review__photo review__photo--without-border" src="images/avatar.png" alt="Author's photo">
-						<div class="review__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-							tempor
-							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+					<div data-slider>
+						<div>
+
+							<div class="review__item review__item--padding-left">
+								<img class="review__photo review__photo--without-border" src="images/avatar.png"
+									alt="Author's photo">
+								<div class="review__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+									eiusmod
+									tempor
+									incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+									exercitation.”
+								</div>
+								<div class="review__author">Joshua Earle</div>
+							</div>
 						</div>
-						<div class="review__author">Joshua Earle</div>
+						<div>
+							<div class="review__item review__item--padding-left">
+								<img class="review__photo review__photo--without-border" src="images/avatar.png"
+									alt="Author's photo">
+								<div class="review__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+									eiusmod
+									tempor
+									incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+									exercitation.”
+								</div>
+								<div class="review__author">Joshua Earle</div>
+							</div>
+						</div>
+
 					</div>
+
+
 				</div>
 			</div>
 		</div>
@@ -865,7 +907,7 @@
 		</footer>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="js/app.js"></script>
 </body>
 
