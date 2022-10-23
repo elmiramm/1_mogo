@@ -850,7 +850,7 @@ display: none;
 
 .works__image {
 	display: block;
-	max-width: 100%;
+	width: 100%;
 
 	transition: opacity 0.2s linear;
 }
@@ -1449,7 +1449,6 @@ display: none;
 	}
 
 	.card__item {
-		width: 100%;
 		min-width: 410px;
 		margin-bottom: 30px;
 	}
