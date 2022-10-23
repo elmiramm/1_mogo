@@ -30,7 +30,9 @@ $(function () {
 
 		let $this = $(this),
 			blockId = $(this).data('scroll'),
-			blockOffset = $(blockId).offset().top;
+			blockOffset = $(blockId).offset().top - header.innerHeight();
+
+		console.log(blockOffset);
 
 		$("#nav a").removeClass("active");
 		$this.addClass("active");
